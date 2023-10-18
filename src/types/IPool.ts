@@ -8,4 +8,7 @@ export type IPool = {
     reserve0?: string;
     reserve1?: string;
     sqrtPrice?: string;
+    feeTier?: number;
+    tick?: string;
+    liquidity?: string;
 }

@@ -14,7 +14,7 @@ const SelectToken: FunctionComponent<{ onSelectToken: React.Dispatch<string>, to
             <select onChange={handleSelectToken}>
                 <option value="">Select Token</option>
                 {tokens.map((token: IToken) => (
-                    <option key={token.id} value={token.id}>{token.symbol} - {token.name}</option>
+                    <option key={token.id} value={token.id}>{token.symbol} - {token.name.substring(0, 10)}</option>
                 ))}
             </select>
         </>
